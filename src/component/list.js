@@ -20,7 +20,8 @@ function List({ onCardClick }) {
       "/images/studio/st-ny.png",
       "/images/studio/st-pz.png",
       "/images/studio/st-nz.png"
-    ]
+    ],
+    
   ];
 
 

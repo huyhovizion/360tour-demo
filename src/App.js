@@ -6,6 +6,8 @@ import SkyBox from './component/skybox';
 import CameraControls from './component/camera-controls';
 import "./styles.css";
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import FixedItem from './component/fixed-item';
+
 
 extend({ OrbitControls });
 
@@ -25,12 +27,13 @@ function App() {
 
   return (
     <>
-      <Canvas className="canvas">
+      <Canvas>
         <Html>
           <Menu onCardClick={handleCardClick} />
         </Html>
         <CameraControls />
         <SkyBox texture={skyboxTexture} />
+        <FixedItem texture={skyboxTexture} handleCardClick={handleCardClick}/>
       </Canvas>
     </>
   );
