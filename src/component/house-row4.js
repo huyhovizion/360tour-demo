@@ -5,7 +5,7 @@
 
 // const HouseRow4 = ({ visible, initialPosition, initialRotation, initialScale, config }) => {
 //   const meshRef = useRef();
-//   const texture = useLoader(TextureLoader, '/images/house3.png'); // Đường dẫn ảnh PNG
+//   const texture = useLoader(TextureLoader, '/images/house4.png'); // Đường dẫn ảnh PNG
 //   const raycaster = useRef(new THREE.Raycaster());
 //   const pointer = useRef(new THREE.Vector2());
 //   const [isHovered, setIsHovered] = useState(false);
@@ -15,7 +15,7 @@
 
 //   useEffect(() => {
 //     const img = new Image();
-//     img.src = '/images/house3.png';
+//     img.src = '/images/house4.png';
 //     img.onload = () => {
 //       const canvas = document.createElement('canvas');
 //       canvas.width = img.width;
@@ -77,7 +77,6 @@
 //       <meshBasicMaterial
 //         map={texture}
 //         transparent={true}
-//         alphaTest={0.5} // Cần thiết để loại bỏ nền trong suốt
 //       />
 //     </mesh>
 //   );

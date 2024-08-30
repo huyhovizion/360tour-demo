@@ -1,0 +1,18 @@
+{
+  "shapes": [
+    {
+      "id": "001",
+      "url": "/images/house4.png",
+      "initialPosition": [-367, -158, 509],
+      "initialRotation": [0, 2.617993877991494, 0], 
+      "initialScale": [119, 96, 1]
+    },
+    {
+      "id": "002",
+      "url": "/images/house4.png",
+      "initialPosition": [-367, -200, 509],
+      "initialRotation": [0, 2.617993877991494, 0], 
+      "initialScale": [119, 96, 1]
+    }
+  ]
+}

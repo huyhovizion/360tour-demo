@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Canvas, extend } from '@react-three/fiber';
-import {Html } from '@react-three/drei';
+import { Html } from '@react-three/drei';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Menu from './component/menu';
 import SkyBox from './component/skybox';
 import CameraControls from './component/camera-controls';
 import FixedItem from './component/fixed-item';
-import { houseRowConfigs } from './component/houseRowConfig';
+import houseRowConfigs from './component/houseRowConfig.json';
 import "./styles.css";
-import HouseRow from './component/house-row';
-import HouseRow2 from './component/house-row2';
 import HouseRow3 from './component/house-row3';
-import HouseRow4 from './component/house-row4';
 
 extend({ OrbitControls });
 
@@ -38,7 +35,7 @@ function App() {
           <Menu onCardClick={handleCardClick} />
         </Html>
         <SkyBox texture={skyboxTexture} />
-        {houseRowConfigs.map((config) => (
+        {houseRowConfigs.shapes.map((config) => (
           <HouseRow3
             key={config.id}
             visible={houseRowVisible}
@@ -47,7 +44,6 @@ function App() {
             initialScale={config.initialScale}
             config={config}
           />
-          
         ))}
         <FixedItem texture={skyboxTexture} handleCardClick={handleCardClick} />
         <CameraControls />
@@ -57,4 +53,3 @@ function App() {
 }
 
 export default App;
-
